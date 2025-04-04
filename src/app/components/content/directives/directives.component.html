@@ -1,0 +1,45 @@
+<h1 [ngClass]="'subject-title'">Subject: Design 1</h1>
+
+<!-- Directivas estructurales -->
+
+<!-- @for -->
+<!-- Full Student List -->
+<div class="d-flex flex-column">
+  <ul class="row">
+    @for (student of students; track students) {
+    <li
+      [ngClass]="'student-card col-md-3'"
+      [ngStyle]="{
+        border:
+          student.absent === 0
+            ? '2px solid gold'
+            : student.absent >= 2
+            ? '2px solid red'
+            : 'none'
+      }"
+    >
+      <p>
+        First Name: <strong>{{ student.firstName }}</strong>
+      </p>
+      <p>
+        Surname: <strong>{{ student.surName }}</strong>
+      </p>
+      <p>
+        Present #: <strong>{{ student.present }}</strong>
+      </p>
+      <p>
+        Absent #: <strong>{{ student.absent }}</strong>
+      </p>
+      <p [ngClass]="student.approvedExam ? 'approved' : 'disapproved'">
+        {{
+          student.approvedExam
+            ? ("approved" | uppercase)
+            : ("disapproved" | uppercase)
+        }}
+      </p>
+    </li>
+    } @empty {
+    <li>No records</li>
+    }
+  </ul>
+</div>

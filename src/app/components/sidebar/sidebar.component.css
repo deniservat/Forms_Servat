@@ -1,0 +1,14 @@
+.sidebar {
+  height: 100%;
+  background-color: #313340;
+  box-shadow: rgba(44, 44, 44, 0.16) 0px 1px 4px;
+}
+.sidebar a {
+  color: #fcfcfc;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  background: #684d6e;
+}

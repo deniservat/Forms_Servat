@@ -1,0 +1,38 @@
+.approved {
+  color: green;
+}
+.disapproved {
+  color: red;
+}
+
+.approved-bg {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.disapproved-bg {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.perfect-attendance {
+  border: 2px solid gold;
+  box-shadow: 0px 0px 8px gold;
+}
+
+.subject-title {
+  color: black; /* Ajusta el color del texto si es necesario */
+  padding: 20px 0;
+  font-size: 1.6rem;
+}
+.student-card {
+  list-style-type: none;
+  padding: 1rem;
+  background-color: #f8f4f4;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 12px;
+  margin: 1rem;
+  width: 30%;
+}
+
+ul {
+  padding-inline-start: 0;
+}
